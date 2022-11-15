@@ -111,6 +111,7 @@ public class BoardDAO {
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
 				one.setRegdate(rs.getDate("regdate"));
+				one.setEditdate(rs.getDate("editdate"));
 				one.setCnt(rs.getInt("cnt"));
 				list.add(one);
 			}
@@ -120,4 +121,27 @@ public class BoardDAO {
 		} 
 		return list;
 	}
+
+	public String getPhotoFilename(int sid){
+		String filename = null;
+
+		try {
+			conn = JDBCUtil.getConnection();
+			stmt = conn.prepareStatement(BOARD_GET);
+			stmt.setInt(1, sid);
+			rs = stmt.executeQuery();
+			if(rs.next()) {
+				filename = rs.getString("filename");
+			}
+			rs.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("===> JDBC로 getPhotoFilename() 기능 처리");
+		return filename;
+	}
+
+
 }

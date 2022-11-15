@@ -7,9 +7,19 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+
+	public Date getEditdate() {
+		return editdate;
+	}
+
+	public void setEditdate(Date editdate) {
+		this.editdate = editdate;
+	}
+
 	private Date regdate;
 
 	private Date editdate;
+
 	private String filename;
 	private int cnt;
 	private String category;
@@ -22,20 +32,15 @@ public class BoardVO {
 		this.category = category;
 	}
 
-	public Date geteditdate() {
-		return editdate;
-	}
 
-	public void seteditdate(Date update) {
-		this.editdate = update;
-	}
+
 
 	public String getFilename() {
 		return filename;
 	}
 
-	public void setFile(String file) {
-		this.filename = file;
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 
 	public int getSeq() {
