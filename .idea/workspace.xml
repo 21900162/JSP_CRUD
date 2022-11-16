@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b89e756-7518-4770-9017-0196f8ab3425" name="변경" comment="before add edit service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" afterDir="false" />
+    <list default="true" id="1b89e756-7518-4770-9017-0196f8ab3425" name="변경" comment="add FileUpload class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bean/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/BoardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/posts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,28 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/UserK/IdeaProjects/Practice_CRUD/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/UserK/IdeaProjects/Practice_CRUD/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\UserK\IdeaProjects\Practice_CRUD\src\main\webapp" />
@@ -185,7 +184,9 @@
       <updated>1668433625763</updated>
       <workItem from="1668433626900" duration="4429000" />
       <workItem from="1668474649906" duration="1241000" />
-      <workItem from="1668506836711" duration="17296000" />
+      <workItem from="1668506836711" duration="19377000" />
+      <workItem from="1668569742427" duration="1131000" />
+      <workItem from="1668591983478" duration="8930000" />
     </task>
     <task id="LOCAL-00001" summary="-Practice CRUD(bean, jsp file)">
       <created>1668438184683</created>
@@ -208,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668514713732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add FileUpload class">
+      <created>1668532753371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668532753371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +237,7 @@
     <MESSAGE value="-Practice CRUD(bean, jsp file)" />
     <MESSAGE value="commit" />
     <MESSAGE value="before add edit service" />
-    <option name="LAST_COMMIT_MESSAGE" value="before add edit service" />
+    <MESSAGE value="add FileUpload class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FileUpload class" />
   </component>
 </project>

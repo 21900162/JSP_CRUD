@@ -10,13 +10,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
+
 public class FileUpload {
     public BoardVO uploadPhoto(HttpServletRequest request) {
         String filename = ""; //업로드 되는 파일 이름 저장용
         int sizeLimit = 15*1024*1024; //파일 크기(15 MB)
 
         String realPath = request.getServletContext().getRealPath("upload");
-//        System.out.println(realPath);
+        System.out.println(realPath);
 
         File dir = new File(realPath);
         if(!dir.exists()) dir.mkdir();
@@ -31,15 +32,15 @@ public class FileUpload {
             String sid = multipartRequest.getParameter("seq");
 
             if(sid!=null && !sid.equals("")) one.setSeq(Integer.parseInt(sid));
-            one.setSeq(Integer.parseInt(multipartRequest.getParameter("seq")));
+//            one.setSeq(Integer.parseInt(multipartRequest.getParameter("seq")));
             one.setCategory(multipartRequest.getParameter("category"));
             one.setTitle(multipartRequest.getParameter("title"));
             one.setWriter(multipartRequest.getParameter("writer"));
             one.setContent(multipartRequest.getParameter("content"));
-            one.setCnt(Integer.parseInt(multipartRequest.getParameter("cnt")));
+//            one.setCnt(Integer.parseInt(multipartRequest.getParameter("cnt")));
 
 
-            if(sid!=null && sid.equals("")){
+            if(sid!=null &&!sid.equals("")){
                 BoardDAO dao = new BoardDAO();
                 String oldfilename = dao.getPhotoFilename(Integer.parseInt(sid));
 
@@ -51,8 +52,6 @@ public class FileUpload {
 
 
             one.setFilename(filename);
-
-            //////////////////고쳐야대
 
         } catch (IOException e) {
             e.printStackTrace();

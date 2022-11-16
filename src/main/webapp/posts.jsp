@@ -41,6 +41,8 @@
 	BoardDAO boardDAO = new BoardDAO();
 	List<BoardVO> list = boardDAO.getBoardList();
 	request.setAttribute("list",list);
+
+
 %>
 <table id="list" width="90%">
 <tr>
@@ -51,6 +53,7 @@
 	<th>Content</th>
 	<th>Regdate</th>
 	<th>Editdate</th>
+	<th>Photo</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
@@ -63,6 +66,9 @@
 		<td>${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>
 		<td>${u.getEditdate()}</td>
+		<td>
+			<img src ="${pageContext.request.contextPath}/upload/${u.getFilename()}" class="photo" height="50" width="50">
+		</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>
